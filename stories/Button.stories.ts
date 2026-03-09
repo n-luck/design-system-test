@@ -16,7 +16,7 @@ const meta = {
         "link",
         "outline",
         "navigation",
-        "navigationSecondary"
+        "navigationSecondary",
       ],
     },
     size: {
@@ -28,6 +28,10 @@ const meta = {
     layout: "centered",
     docs: {
       toc: true,
+    },
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/836Xy3CkxKnLEOCVxuyUzO/Storybook-Connect-Test?node-id=3-6&t=BA8aZI4GA0yagb6T-1",
     },
   },
 } satisfies Meta<typeof Button>;

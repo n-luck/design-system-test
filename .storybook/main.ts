@@ -11,7 +11,8 @@ const config: StorybookConfig = {
     "@storybook/addon-a11y",
     "@storybook/addon-docs",
     "@storybook/addon-styling-webpack",
-    "@storybook/addon-themes"
+    "@storybook/addon-themes",
+    "@storybook/addon-designs",
   ],
   framework: "@storybook/nextjs-vite",
   staticDirs: ["../public"],
