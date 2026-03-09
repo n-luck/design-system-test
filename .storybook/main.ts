@@ -14,7 +14,7 @@ const config: StorybookConfig = {
     "@storybook/addon-themes"
   ],
   framework: "@storybook/nextjs-vite",
-  staticDirs: ["..\\public"],
+  staticDirs: ["../public"],
   typescript: {
     reactDocgen: "react-docgen-typescript",
   },
