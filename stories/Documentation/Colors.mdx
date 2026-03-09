@@ -1,0 +1,52 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+import colors from "tailwindcss/colors";
+
+<Meta title="Color Palette" />
+
+<ColorPalette>
+  <ColorItem
+    title="Brand green"
+    subtitle="The greens"
+    colors={{
+      muted: "#e7fdd8",
+      primary: "#87f53d",
+      sidebar: "#00403a",
+      secondary: "#00302c",
+    }}
+  />
+  <ColorItem
+    title="gradient"
+    subtitle="Grayscale"
+    colors={{
+      Gradient: "linear-gradient(to right,#e7fdd8,#00302c)",
+    }}
+  />
+  <ColorItem
+    title="gradient"
+    subtitle="Grayscale"
+    colors={['linear-gradient(20deg,#e7fdd8,#00302c)']}
+  />
+  <ColorItem 
+    title="theme.color.secondary" 
+    subtitle="Ocean" 
+    colors={{ DodgerBlue: '#1EA7FD' }} 
+  />
+  <ColorItem
+    title="theme.color.positive"
+    subtitle="Green"
+    colors={{
+      Apple: 'rgba(102,191,60,1)',
+      Apple80: 'rgba(102,191,60,.8)',
+      Apple60: 'rgba(102,191,60,.6)',
+      Apple30: 'rgba(102,191,60,.3)',
+    }}
+  />  
+</ColorPalette>
+
+<ColorPalette>
+  {Object.entries(colors)
+    .filter(([, value]) => typeof value !== "string")
+    .map(([name, value]) => (
+      <ColorItem key={name} title={name} colors={value} />
+    ))}
+</ColorPalette>

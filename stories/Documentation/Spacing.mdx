@@ -1,0 +1,46 @@
+import { Meta, Markdown, Canvas } from "@storybook/addon-docs/blocks";
+import * as ButtonStories from "../Button.stories";
+
+<Meta title="Spacing" />
+
+export const SampleText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+# Spacing
+
+**Example Story:** Example story including code box.
+
+## Usage
+ 
+The component comes in different variants such as `primary`, `secondary`, `large` and `small` which you can use to alter the look and feel of the button.
+
+- [Coding Standards Document](https://your-coding-standards-link.com)
+ 
+## Inputs
+ 
+Button has the following properties:
+
+<Canvas of={ButtonStories.Default} />
+
+**Spacing:** The default Tailwind/Shadcn spacing, works for paddings, margins, gaps etc.
+
+<Markdown>
+  {`
+| Prop         | Padding (p-) | Margin (m-) | Gap (gap-) | Width (w-) |
+| ------------ | ------------ | ------------ | ------------ |
+|  *-0  |  padding: 0px  |  margin: 0px  |  row-gap: 0px, column-gap: 0px  |  width: 0px  |
+|  *-1  |  padding: 4px  |  margin: 4px  |  row-gap: 4px, column-gap: 4px  |  width: 4px  |
+|  *-2  |  padding: 8px  |  margin: 8px  |  row-gap: 8px, column-gap: 8px  |  width: 8px  |
+|  *-3  |  padding: 12px  |  margin: 12px  |  row-gap: 12px, column-gap: 12px  |  width: 12px  |
+|  *-4  |  padding: 16px  |  margin: 16px  |  row-gap: 16px, column-gap: 16px  |  width: 16px  |
+|  *-5  |  padding: 20px  |  margin: 20px  |  row-gap: 20px, column-gap: 20px  |  width: 20px  |
+|  *-6  |  padding: 24px  |  margin: 24px  |  row-gap: 24px, column-gap: 24px  |  width: 24px  |
+|  *-7  |  padding: 28px  |  margin: 28px  |  row-gap: 28px, column-gap: 28px  |  width: 28px  |
+|  *-96  |  padding: 384px  |  margin: 384px  |  row-gap: 384px, column-gap: 384px  |  width: 384px  |
+`}
+</Markdown>
+
+<ul>
+  <li>DO:</li>
+  <li>Blubb</li>
+</ul>
